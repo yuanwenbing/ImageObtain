@@ -11,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.widget.Toast;
 
+import com.yuan.imageobtain.R;
 import com.yuan.imageobtain.eventbus.BusProvider;
 import com.yuan.imageobtain.eventbus.ImageEvent;
 
@@ -44,7 +45,7 @@ public class ObtainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         if (!Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-            Toast.makeText(this, "sdcard 不可用，请检查！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.sdcard_not_work, Toast.LENGTH_SHORT).show();
             finish();
             return;
         }
@@ -61,7 +62,7 @@ public class ObtainActivity extends AppCompatActivity {
         if (!file.exists()) {
             boolean mk = file.mkdir();
             if (!mk) {
-                Toast.makeText(this, "sdcard 不可用，请检查！", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.sdcard_not_work, Toast.LENGTH_SHORT).show();
                 finish();
                 return;
             }

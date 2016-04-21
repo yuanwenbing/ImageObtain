@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">imageobtain</string>
+    <string name="sdcard_not_work">sdcard 不可用，请检查！</string>
 </resources>
