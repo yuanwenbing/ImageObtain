@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImageObtain</string>
+    <string name="obtain_channel_camera">从相机获取</string>
+    <string name="obtain_channel_album">从相册中获取</string>
+</resources>
